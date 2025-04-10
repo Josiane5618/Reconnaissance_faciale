@@ -1,0 +1,16 @@
+<FaceRecognitionUI>:
+    orientation: 'vertical'
+    padding: 10
+    spacing: 10
+    
+    Button:
+        id: recognize_btn
+        text: 'Reconnaissance: ON'
+        size_hint: 0.5, 0.2
+        pos_hint: {'center_x': 0.5}
+        on_press: root.toggle_recognition_mode()
+
+    Label:
+        text: 'Appuyez sur le bouton pour activer/désactiver la reconnaissance faciale.'
+        size_hint: 0.5, 0.1
+        pos_hint: {'center_x': 0.5}
