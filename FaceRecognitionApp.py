@@ -42,7 +42,7 @@ if not os.path.exists(PREDICTOR_PATH) or not os.path.exists(REC_MODEL_PATH):
         popup.open()
 
     msg = (
-        "❌ Modèles manquants:\n"
+        " Modèles manquants:\n"
         f"{PREDICTOR_PATH}\n{REC_MODEL_PATH}\n"
         "Téléchargez-les ici:\n"
         "http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2\n"
@@ -221,7 +221,7 @@ class FaceRecognitionApp(App):
                                 popup.dismiss()
                                 self.show_gallery(None)
                             else:
-                                self.info.text = "❌ Aucun visage détecté ou déjà existant"
+                                self.info.text = " Aucun visage détecté ou déjà existant"
                         else:
                             self.info.text = "⚠️ Entrez un nom valide"
 
